@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, ScrollView, Text, View } from "react-native";
 
 import EditableTimer from "./components/EditableTimer";
-// import ToggleableTimerForm from "./components/ToggleableTimerForm";
+import ToggleableTimerForm from "./components/ToggleableTimerForm";
 
 export default class App extends React.Component {
   render() {
@@ -13,19 +13,19 @@ export default class App extends React.Component {
           <Text style={title}>Timers</Text>
         </View>
         <ScrollView style={timerList}>
-          {/* <ToggleableTimerForm isOpen={false} /> */}
-          {/* <EditableTimer
+          <ToggleableTimerForm isOpen={false} />
+          <EditableTimer
             id="1"
             title="Mow the Lawn"
             project="House Chores"
-            elapse="8986300"
+            elapsed="8986300"
             isRunning
-          /> */}
+          />
           <EditableTimer
             id="2"
             title="Bake squash"
             project="Kitchen Chores"
-            elapse="3890985"
+            elapsed="3890985"
             editFormOpen
           />
         </ScrollView>

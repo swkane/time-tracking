@@ -1,7 +1,7 @@
 import React from "react";
 
 import TimerForm from "./TimerForm";
-// import Timer from "./Timer";
+import Timer from "./Timer";
 
 export default ({ id, title, project, elapsed, isRunning, editFormOpen }) => {
   if (editFormOpen) {
